@@ -10,13 +10,13 @@ pipeline {
            stage('assemble') {
                steps {
                    //echo 'Hello Assembler'
-                   ./gradlew assemble
+                   /gradlew assemble
                }
            }
            stage('test') {
                steps {
                    //echo 'Hello Tester'
-                   ./gradlew test
+                   /gradlew test
                }
            }
        }
