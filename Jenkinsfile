@@ -9,12 +9,12 @@ pipeline {
        stages {
            stage('assemble') {
                steps {
-                   . ./gradlew assemble
+                   sh './gradlew assemble'
                }
            }
            stage('test') {
                steps {
-                   . ./gradlew test
+                   sh './gradlew test'
                }
            }
        }
