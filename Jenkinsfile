@@ -9,13 +9,11 @@ pipeline {
        stages {
            stage('assemble') {
                steps {
-                   //echo 'Hello Assembler'
                    /gradlew assemble
                }
            }
            stage('test') {
                steps {
-                   //echo 'Hello Tester'
                    /gradlew test
                }
            }
